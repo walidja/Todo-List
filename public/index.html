@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Todo List</title>
+        <link rel="stylesheet" href="style/style.css">
+        <script type="module" src="scripts/data_handler.js" defer></script>
+        <script type="module" src="scripts/fillData.js" defer></script>
+        <script type="module" src="scripts/main.js" defer></script>
+    </head>
+    <body>
+        <div class="modal">
+            <div class="modal-content">
+                <h2>New Task</h2>
+                <label>Description:<input id="desc" placeholder="Please type task description." required/></label>
+                <label>Priority   :<input id="prio" type="number" placeholder="Please type project title."/></label>
+                <label>Target day :<input id="target" type="datetime" placeholder="Please type project title."/></label>
+                <input type="submit" id="submit_task_btn">
+                <input type="submit" id="update_task_btn" value="update">
+            </div>
+        </div>
+        <main>
+            <div class="wraper">
+                <section class="projects">
+                    <article><h2>Todo list</h2></article>
+                    <article class="list_of_content">
+                        <ul class="lists">
+                        </ul>
+                    </article>
+                    <article class="title_form">
+                        <input class="flex_item" placeholder="Please type project title."/>
+                        <button class="btn_list flex_item">Create</button>
+                    </article>
+                </section>
+                <section class="tasks">
+                    <article>
+                        <h2 id="project_name"> Project Name</h2>
+                    </article>
+                    <article class="list_of_content">
+                    </article>
+                    <article class="add-task">
+                        <button class="btn_task"> New Task</button>
+                    </article>
+                </section>
+            </div>
+        </main>
+    </body>
+</html>

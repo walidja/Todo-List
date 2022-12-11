@@ -38,9 +38,9 @@ export const deleteProject = async (req, res) => {
     res.status(404);
     res.send({});
   } else {
-    Project.destroy({ id: req.params.projectId }).then((value) => {
+    project.destroy().then((value) => {
       res.status(200);
-      res.send(value);
+      res.send({});
     });
   }
 };

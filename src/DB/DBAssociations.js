@@ -19,6 +19,7 @@ Project.hasMany(Task, {
   foreignKey: {
     allowNull: false,
   },
+  onDelete: "cascade",
 });
 Task.belongsTo(Project, {
   foreignKey: {
